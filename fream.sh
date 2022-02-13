@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# </ By Multtimy >
+
 # Colors
 red="\e[01;31m"; green="\e[01;32m"; yellow="\e[01;33m";
 blue="\e[01;34m"; cyan="\e[01;36m"; end="\e[00m";
@@ -42,7 +44,7 @@ RELOADING(){
 }
 
 # main Function
-__init__(){
+init(){
    if [[ $(id -u) -eq 0 ]]; then
       clear && tput civis && sleep 0.4
       echo -e "${green}Scanning ${red}RAM ${end}\c"; ANIMATION
@@ -57,4 +59,4 @@ __init__(){
    fi
 }
 
-__init__
+init
