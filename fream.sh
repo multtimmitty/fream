@@ -29,7 +29,7 @@ SCANNRAM(){
    local freeRAM=$(free --human --si | grep 'Mem' | awk '{print $4}')
    local usedRAM=$(free --human --si | grep 'Mem' | awk '{print $3}')
    echo -e "${cyan}┌〉${yellow}Status of the memory ${1}${red}RAM${end}"
-   echo -e "${cyan}├〉${yellow}Free RAM${cyan}⌥  ${green}${freeRAM} ${yellow}Used RAM${cyan}⌥  ${green}${usedRAM}${end}"
+   echo -e "${cyan}├〉${yellow}Free RAM${cyan} ⌥ ${green}${freeRAM} ${yellow}Used RAM${cyan} ⌥ ${green}${usedRAM}${end}"
 }
 
 # Function reloading ram
